@@ -1,29 +1,19 @@
-﻿Console.WriteLine("Введите число");
+﻿Console.WriteLine("Введите число: ");
+int num = Int32.Parse(Console.ReadLine());
 
-string num1 = Console.ReadLine();
-string num2 = Console.ReadLine();
-string num3 = Console.ReadLine();
-
-  if (Int32.Parse(num1) > Int32.Parse(num2)) 
-    {
-        if (Int32.Parse(num1) > Int32.Parse(num3)) 
-        {
-        Console.WriteLine("Большее число:"+num1);
-        }
-           else
-           {
-           Console.WriteLine("Большее число:"+num3);
-           }
-        }
-   else
-    {
-        if (Int32.Parse(num2) > Int32.Parse(num3)) 
-        {
-        Console.WriteLine("Большее число:"+num2);
-        }
-           else
-           {
-           Console.WriteLine("Большее число:"+num3);
-           }
-    }
-
+while(num > 2)
+{
+if(num % 2 == 0)
+{
+   Console.Write(num + ",");    
+}
+    num--;
+}
+if(num == 2)
+{
+   Console.Write("num");
+}
+else 
+{ 
+   Console.Write("Нет чётных чисел");
+}
